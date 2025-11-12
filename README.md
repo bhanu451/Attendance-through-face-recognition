@@ -107,3 +107,5 @@ If missing, the script automatically downloads:
 deploy.prototxt
 
 res10_300x300_ssd_iter_140000.caffemodel
+
+![IMG-20250411-WA0012](https://github.com/user-attachments/assets/2e22f51c-05bc-4952-bff5-b75214b47166)
