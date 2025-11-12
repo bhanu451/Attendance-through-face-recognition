@@ -26,20 +26,27 @@ The system uses OpenCV’s SSD-based deep learning face detector (res10_300x300_
 
 face_recognition_attendance/
 │
-├── user_data/                     # Directory for storing user face data
-│   └── trained_faces.pkl           # Serialized face data file
+├── user_data/  
+
+│   └── trained_faces.pkl           
+
 │
-├── deploy.prototxt                 # DNN model configuration (auto-downloaded)
-├── res10_300x300_ssd_iter_140000.caffemodel   # DNN model weights (auto-downloaded)
-│
-├── face_recognition_attendance.py  # Main Python script
-├── README.md                       # Project documentation
-└── requirements.txt                 # Python dependencies
+├── deploy.prototxt    
+
+├── res10_300x300_ssd_iter_140000.caffemodel
+
+├── face_recognition_attendance.py 
+
+├── README.md    
+
+└── requirements.txt                 
 
 
 ⚙️ Installation & Setup
 
 1️⃣ Clone the Repository
+
+hello.py
 
 2️⃣ Install Required Libraries
 
