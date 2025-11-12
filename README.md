@@ -1,12 +1,12 @@
-🧠 Face Recognition Attendance System
-📘 Overview
+# 🧠 Face Recognition Attendance System
+# 📘 Overview
 
 This project is a Face Recognition Attendance System built using OpenCV and Deep Neural Networks (DNN) for facial detection.
 It allows users to train their faces and mark attendance automatically by recognizing faces from a webcam feed.
 
 The system uses OpenCV’s SSD-based deep learning face detector (res10_300x300_ssd_iter_140000.caffemodel) and compares new faces with trained ones using Mean Squared Error (MSE) similarity.
 
-🚀 Features
+# 🚀 Features
 
 🧍‍♂️ Train new faces using your webcam
 
@@ -22,7 +22,7 @@ The system uses OpenCV’s SSD-based deep learning face detector (res10_300x300_
 
 
 
-🧩 Project Structure
+# 🧩 Project Structure
 
 face_recognition_attendance/
 │
@@ -42,13 +42,13 @@ face_recognition_attendance/
 └── requirements.txt                 
 
 
-⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
-1️⃣ Clone the Repository
+# 1️⃣ Clone the Repository
 
 hello.py
 
-2️⃣ Install Required Libraries
+# 2️⃣ Install Required Libraries
 
 Create a virtual environment (recommended) and install dependencies:
 
@@ -61,10 +61,10 @@ opencv-python
 imutils
 numpy
 
-3️⃣ Run the Program
-python face_recognition_attendance.py
+# 3️⃣ Run the Program
+hello.py
 
-🧭 Usage Instructions
+# 🧭 Usage Instructions
 
 Once you run the script, you’ll see the following menu:
 
@@ -88,7 +88,7 @@ The system will detect faces and compare them with the trained data.
 
 If recognized, it displays your name and asks whether to mark attendance.
 
-🧠 Technical Details
+# 🧠 Technical Details
 
 Face Detection: OpenCV DNN (SSD-based model)
 
@@ -100,12 +100,14 @@ Threshold: MSE < 1000 for recognition
 
 Dependencies: OpenCV, NumPy, Imutils, Pickle
 
-📁 Data Files Auto-Downloaded
+# 📁 Data Files Auto-Downloaded
 
 If missing, the script automatically downloads:
 
 deploy.prototxt
 
 res10_300x300_ssd_iter_140000.caffemodel
+
+# Example output:
 
 ![IMG-20250411-WA0012](https://github.com/user-attachments/assets/2e22f51c-05bc-4952-bff5-b75214b47166)
