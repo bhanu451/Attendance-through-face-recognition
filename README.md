@@ -1,113 +1,90 @@
-# 🧠 Face Recognition Attendance System
-# 📘 Overview
+# Face Recognition Attendance System
 
-This project is a Face Recognition Attendance System built using OpenCV and Deep Neural Networks (DNN) for facial detection.
-It allows users to train their faces and mark attendance automatically by recognizing faces from a webcam feed.
+A Python-based attendance system that uses **OpenCV** and a **DNN face detector** to detect faces from a webcam and mark attendance automatically.
 
-The system uses OpenCV’s SSD-based deep learning face detector (res10_300x300_ssd_iter_140000.caffemodel) and compares new faces with trained ones using Mean Squared Error (MSE) similarity.
+## Overview
 
-# 🚀 Features
+This project is designed to simplify attendance tracking using real-time face recognition.  
+It detects faces through a webcam, compares them with previously trained face data, and allows attendance to be recorded for recognized users.
 
-🧍‍♂️ Train new faces using your webcam
+## Features
 
-🎥 Real-time face detection and recognition
+- Train new faces using webcam input
+- Real-time face detection and recognition
+- Attendance marking after successful recognition
+- Local storage of trained face data
+- Lightweight and easy to run on a local machine
 
-💾 Stores trained faces in a local .pkl file
+## Tech Stack
 
-🗂️ Automatically downloads the required OpenCV model files if missing
+- Python
+- OpenCV
+- NumPy
+- Imutils
+- Pickle
 
-✅ Option to mark attendance after successful recognition
+## Project Files
 
-🧰 Lightweight and easy to run locally
+```bash
+Attendance-through-face-recognition/
+├── README.md
+├── hello.py
+├── deploy.prototxt
+└── res10_300x300_ssd_iter_14000.caffemodel
+```
 
+## How It Works
 
+1. Run the Python script.
+2. Choose to train a new face or recognize an existing one.
+3. Capture face data using the webcam.
+4. Compare detected faces with stored training data.
+5. Mark attendance for recognized users.
 
-# 🧩 Project Structure
+## Installation
 
-face_recognition_attendance/
-│
-├── user_data/  
+### 1. Clone the repository
 
-│   └── trained_faces.pkl           
+```bash
+git clone https://github.com/bhanu451/Attendance-through-face-recognition.git
+cd Attendance-through-face-recognition
+```
 
-│
-├── deploy.prototxt    
+### 2. Install dependencies
 
-├── res10_300x300_ssd_iter_140000.caffemodel
+```bash
+pip install opencv-python numpy imutils
+```
 
-├── face_recognition_attendance.py 
+### 3. Run the project
 
-├── README.md    
+```bash
+python hello.py
+```
 
-└── requirements.txt                 
+## Usage
 
+- Select the training option to register a new face.
+- Enter the required details when prompted.
+- Use the recognition option to detect and identify faces.
+- Mark attendance once a face is successfully recognized.
 
-# ⚙️ Installation & Setup
+## Output
 
-# 1️⃣ Clone the Repository
+The system opens the webcam feed, detects faces in real time, and shows recognition results directly on screen.
 
-hello.py
+## Future Improvements
 
-# 2️⃣ Install Required Libraries
+- Store attendance in CSV or database format
+- Improve recognition accuracy with embeddings
+- Add a graphical user interface
+- Export attendance reports
 
-Create a virtual environment (recommended) and install dependencies:
+## Author
 
-pip install -r requirements.txt
+**Bhanu**
+- GitHub: [bhanu451](https://github.com/bhanu451)
 
+## Repository Tags
 
-requirements.txt
-
-opencv-python
-imutils
-numpy
-
-# 3️⃣ Run the Program
-hello.py
-
-# 🧭 Usage Instructions
-
-Once you run the script, you’ll see the following menu:
-
-1. Train new face
-2. Recognize faces and post attendance
-3. Exit
-
-🧍 Train a New Face
-
-Enter your name and roll number.
-
-Press SPACE to capture your face using the webcam.
-
-The system will detect and store your face in user_data/trained_faces.pkl.
-
-🎥 Recognize Faces
-
-Show your face to the webcam.
-
-The system will detect faces and compare them with the trained data.
-
-If recognized, it displays your name and asks whether to mark attendance.
-
-# 🧠 Technical Details
-
-Face Detection: OpenCV DNN (SSD-based model)
-
-Face Comparison Metric: Mean Squared Error (MSE)
-
-Data Storage: Pickle serialization (trained_faces.pkl)
-
-Threshold: MSE < 1000 for recognition
-
-Dependencies: OpenCV, NumPy, Imutils, Pickle
-
-# 📁 Data Files Auto-Downloaded
-
-If missing, the script automatically downloads:
-
-deploy.prototxt
-
-res10_300x300_ssd_iter_140000.caffemodel
-
-# Example output:
-
-![IMG-20250411-WA0012](https://github.com/user-attachments/assets/2e22f51c-05bc-4952-bff5-b75214b47166)
+`python` `opencv` `face-recognition` `attendance-system` `computer-vision`
